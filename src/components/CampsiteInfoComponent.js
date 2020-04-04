@@ -123,8 +123,7 @@ class CommentForm extends React.Component {
                     <LocalForm onSubmit={this.handleSubmit}>
                     <div className="form-group">
                                 <label htmlFor="rating">Rating</label>
-                                <Control.select model=".rating" id="rating" name="rating" className='form-control'
-                                >
+                                <Control.select model=".rating" id="rating" name="rating" className='form-control' defaultValue="1">
                                     <option value="1">1</option>
                                     <option value="2">2</option>
                                     <option value="3">3</option>
