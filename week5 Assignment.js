@@ -202,33 +202,5 @@ export const postFeedback = (firsName, lastName, phoneNum, email, agree, contact
 
 
 //task 3 update to make it fit the partneres list, below is render comments fron CampsiteInfo. Fade and Stagger used in different spots though
-import fade and stagger at top of
 
-const partners = props.partners.map(partner => {
-    return (
-    <Fade in key={partner.id}><Media tag="li" ><RenderPartner partner={partner}></RenderPartner></Media></Fade>
-    );
-});
-
-return( 
-    <div className="col mt-4">
-                 <Media list>
-                 <Stagger in>{partners}</Stagger>
-                 </Media>
-             </div>
-    );
-
-<Stagger in>
-                    {comments.map(comment => {
-                        return (
-                            <Fade in key={comment.id}>
-                                <div>
-                                    <p>{comment.text}<br />
-                                        -- {comment.author}, {new Intl.DateTimeFormat('en-US', { year: 'numeric', month: 'short', day: '2-digit'}).format(new Date(Date.parse(comment.date)))}
-                                    </p>
-                                </div>
-                            </Fade>
-                        );
-                    })}
-                </Stagger>
 
